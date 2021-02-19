@@ -17,7 +17,7 @@ Infelizmente não consegui finalizar o teste para a vaga como eu gostaria e fico
 
 Ao iniciar e fazer todo o setup do projeto em Next com Styled Components, vi que precisamos adicionar uma configuração no  **Babel** e criar um arquivo **_document.js** na pasta **pages** para que nossos estilos do Styled Components sejam renderizados em **Server Side**.
 
-O **Redux** também tem um funcionamento diferente em **Server Side Rendering**, porém não tive tempo para pesquisar sobre.
+O **Redux** também tem um funcionamento diferente em **Server Side Rendering**, cheguei a fazer a estrutura das pastas e alguns arquivos, porém **não tive tempo para implementá-lo**.
 
 Quanto a imagem de login, eu estava com dúvidas se utilizava `.svg` ou `.png`, mas acabei optando por `.png` mesmo, pois a imagem em `.svg` estava muito grande e estava causando problemas de performance na aplicação. 
 Mesmo tentando utilizar o próprio componente **Image** do **Next.js** que é otimizado para imagens e a converte em **webpack**, não foi o suficiente, então utilizei ela em `.png` mesmo.
