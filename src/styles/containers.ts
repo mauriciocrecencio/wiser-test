@@ -39,7 +39,6 @@ export const Form = styled.div`
   height: 100vh;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   flex-direction: column;
   label {
     color: #383e71;
@@ -50,7 +49,6 @@ export const Form = styled.div`
   @media (max-width: 425px) {
     
     align-self: flex-start;
-    /* margin-left: 32px; */
     padding: 2px 40px; 
   }
   }
@@ -68,11 +66,7 @@ export const Form = styled.div`
     align-items: center;
     width: 100%;
     height: 100%;
-    input[type="button"]{
- -moz-appearance: none;
- -webkit-appearance: none;
- appearance: none;
-}
+    
     * {
       margin: none;
     }

@@ -9,7 +9,9 @@ import {
   ErrorText
 } from '../../styles/elements'
 import { ContainerForm, Form } from '../../styles/containers'
+import { useSelector, useDispatch } from 'react-redux'
 import API from '../../utils/api'
+import { userUpdate } from '../../../store/actions/user/index'
 
 const LoginContent = () => {
   const [user, setUser] = useState<User>({
@@ -18,7 +20,11 @@ const LoginContent = () => {
   })
   const [isDisable, setIsDisable] = useState<boolean>(false)
   const [hasError, setHasError] = useState<boolean>(false)
-
+  const { email, password } = useSelector(state => state.user)
+  const dispatch = useDispatch()
+  const updateUser = () => {
+    dispatch(userUpdate(user))
+  }
   const handleDisableClickOnThePage = bool => {
     setIsDisable(bool)
   }
@@ -41,6 +47,7 @@ const LoginContent = () => {
     if (checkAuthUser(users)) {
       setHasError(false)
       handleDisableClickOnThePage(false)
+      window.alert('Logado com sucesso!')
     } else {
       setHasError(true)
       handleDisableClickOnThePage(false)
