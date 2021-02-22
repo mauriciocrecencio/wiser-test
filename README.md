@@ -5,6 +5,9 @@
 
 # Live Demo
 https://wiser-test.vercel.app/
+Login:  test@teste.com
+Senha: 12345
+
 # Introdução
 
 Meu primeiro projeto em **Next.JS** e em **Styled Components** e trabalhando com **`@media queries` no CSS**!
